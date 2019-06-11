@@ -19,7 +19,9 @@
   },
   "ignoreFiles": [
     "node_modules/*",
-    "src/assets/**"
+    "src/assets/**",
+    ".DS_Store",
+    ".wakatime-config"
   ],
   "defaultSeverity": "error"
 }
