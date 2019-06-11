@@ -24,7 +24,7 @@ module.exports = {
   ],
   author: {
     name: 'Zoe Daniels',
-    photo: '/photo.jpg',
+    photo: '/photo.png',
     bio: 'Writer, instructor, web developer. Living in Toronto.',
     contacts: {
       // email: '#',
