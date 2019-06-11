@@ -17,6 +17,7 @@
 
       &-link {
         color: $color-base;
+        transition:all .3s;
 
         &:hover,
         &:focus {
@@ -65,13 +66,20 @@
     }
 
     &-readmore {
-      font-size: $typographic-base-font-size;
+      font-size: $typographic-large-font-size;
       color: $color-primary;
-
-      &:hover,
-      &:focus {
+      transition:all .3s alternate;
+      padding: 0 0 ;
+      &:hover span,
+      &:focus span{
+        transition:all .3s;
+        
         color: $color-primary;
-        border-bottom: 1px solid $color-primary;
+        // border-bottom: 1px solid $color-primary;
+        padding:0 10px;
+      }
+      span:first-of-type{
+        padding-left:0
       }
 
     }

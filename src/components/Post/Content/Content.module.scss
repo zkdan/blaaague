@@ -41,7 +41,8 @@
     }
 
     & a {
-      text-decoration: underline
+      text-decoration: underline;
+      transition:all .3s;
     }
 
     & * {
