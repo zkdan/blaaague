@@ -16,7 +16,10 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+<<<<<<< HEAD
   cursor:crosshair;
+=======
+>>>>>>> 9d14ba355c15a3887b654ad96b24b4b58eb2171a
 }
 
 h1,
@@ -93,13 +96,21 @@ hr {
 }
 
 a {
+<<<<<<< HEAD
   color: $typographic-link-s-font-color;
+=======
+  color: $typographic-link-p-font-color;
+>>>>>>> 9d14ba355c15a3887b654ad96b24b4b58eb2171a
   text-decoration: none;
 
   &:hover,
   &:focus,
   &:active {
+<<<<<<< HEAD
     color: $typographic-link-p-font-color;
+=======
+    color: $typographic-link-s-font-color;
+>>>>>>> 9d14ba355c15a3887b654ad96b24b4b58eb2171a
   }
 
 }

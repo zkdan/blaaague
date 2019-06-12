@@ -6,7 +6,10 @@
 
   &__list {
     list-style: none;
+<<<<<<< HEAD
     color:$color-primary;
+=======
+>>>>>>> 9d14ba355c15a3887b654ad96b24b4b58eb2171a
     padding: 0;
     margin: 0;
 
@@ -17,6 +20,7 @@
       &-link {
         font-size: $typographic-base-font-size;
         color: $typographic-base-font-color;
+<<<<<<< HEAD
         font-weight: 500;
         border: 0;
         transition:all .3s; 
@@ -25,11 +29,24 @@
         &:focus {
           color: $color-base;
           border-bottom: 1px solid $color-base;
+=======
+        font-weight: normal;
+        border: 0;
+
+        &:hover,
+        &:focus {
+          color: $color-primary;
+          border-bottom: 1px solid $color-primary;
+>>>>>>> 9d14ba355c15a3887b654ad96b24b4b58eb2171a
         }
 
         &--active {
           color: $color-base;
+<<<<<<< HEAD
           // border-bottom: 1px solid $color-base;
+=======
+          border-bottom: 1px solid $color-base;
+>>>>>>> 9d14ba355c15a3887b654ad96b24b4b58eb2171a
         }
 
       }

@@ -17,7 +17,10 @@
 
       &-link {
         color: $color-base;
+<<<<<<< HEAD
         transition:all .3s;
+=======
+>>>>>>> 9d14ba355c15a3887b654ad96b24b4b58eb2171a
 
         &:hover,
         &:focus {
@@ -66,6 +69,7 @@
     }
 
     &-readmore {
+<<<<<<< HEAD
       font-size: $typographic-large-font-size;
       color: $color-primary;
       transition:all .3s alternate;
@@ -80,6 +84,15 @@
       }
       span:first-of-type{
         padding-left:0
+=======
+      font-size: $typographic-base-font-size;
+      color: $color-primary;
+
+      &:hover,
+      &:focus {
+        color: $color-primary;
+        border-bottom: 1px solid $color-primary;
+>>>>>>> 9d14ba355c15a3887b654ad96b24b4b58eb2171a
       }
 
     }
