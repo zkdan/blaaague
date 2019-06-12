@@ -27,32 +27,21 @@
       border-radius: 50%;
       text-align: center;
       border: 1px solid $color-gray-bg;
-<<<<<<< HEAD
       transition: all .3s;
       &:hover,  
       &:focus{
         background: $color-primary;
         border: 1px solid transparent;
       }
-=======
-
->>>>>>> 9d14ba355c15a3887b654ad96b24b4b58eb2171a
       &-link {
         border: 0;
         display: flex;
         color: $color-base;
-<<<<<<< HEAD
         transition:all .3s;
 
         &:hover,  
         &:focus {
           color:$color-white;
-=======
-  
-        &:hover,
-        &:focus {
-          color: $color-primary;
->>>>>>> 9d14ba355c15a3887b654ad96b24b4b58eb2171a
         }
 
       }
