@@ -4,7 +4,6 @@
 .pagination {
   @include margin-top(2);
   display: flex;
-
   &__prev {
     width: 50%;
     text-align: left;
@@ -21,7 +20,7 @@
 
       &--disable {
         pointer-events: none;
-        color: lighten($color-gray, 20%);
+        color: lighten($color-gray, 30%);
       }
 
     }
@@ -44,7 +43,7 @@
 
       &--disable {
         pointer-events: none;
-        color: lighten($color-gray, 20%);
+        color: lighten($color-gray, 30%);
       }
 
     }

@@ -14,8 +14,6 @@ description: "What's the difference between an a function expression and a funct
 
 Why is a function expression called an expression? What about it makes it expression-y? Given what I knew about expressions, it seemed to me that any time you create a function it's a statement and any time you call a function, it's an expression. Not so.
 
-## Expressions vs. statements
-
 An expression is a combination of variables, constants, operators, and functions that returns a value.
 
 A statement is a syntactic unit of meaning that denotes some action to be carried out by a program.
