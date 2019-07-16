@@ -25,7 +25,7 @@ description: "Step-by-step instructions on how to make an API with Node.js, Expr
 * Proficiency with JavaScript
 * Familiarity with HTTP methods
 * A JSON file with some data in it 
-  * If you don't have one, [you can use this one](https://www.zoecodes.com/media/inventorySingleDocument.json).
+  * If you don't have one, [you can use this one](https://raw.githubusercontent.com/zkdan/sharing/master/inventorySingleDocument.json).
 
 ## Glossary
 **MongoDB**: a database-making tool that stores data in a format similar to JSON.
@@ -212,7 +212,7 @@ Luckily, we've got options.
 ### `mongoimport`
 You can use the `mongoimport` command to import a JSON file to a node in your database.
 
-> If you don't have one, you can use [this one](https://www.zoecodes.com/media/inventorySingleDocument.json).
+> If you don't have one, you can use [this one](https://raw.githubusercontent.com/zkdan/sharing/master/inventorySingleDocument.json).
 
 1. Get out of the mongo shell: `ctrl + C` / `cmd + C`.
 1. In your regular terminal, use the `mongoimport` command along with your host name, database name, username and password. Mine was:
@@ -305,7 +305,7 @@ If you want to change the name of the collection to be something other than the 
 
 You can verify that it worked by [getting back into the mongo shell](https://www.zoecodes.com/posts/how-to-make-an-api/#accessing-your-mlab-database-from-your-terminal) and seeing what documents you have (`db.storeOneInventory.find()`).
 
-If you wanted each item (i.e. `capriPants`, `hat`, `shorts`, etc.) to be its own document, you would need to use the `--jsonArray` flag and refactor the data to be an array of objects. If you don't have one, you can [use this one](https://www.zoecodes.com/media/inventoryArray.json).
+If you wanted each item (i.e. `capriPants`, `hat`, `shorts`, etc.) to be its own document, you would need to use the `--jsonArray` flag and refactor the data to be an array of objects. If you don't have one, you can [use this one](https://raw.githubusercontent.com/zkdan/sharing/master/inventoryArray.json).
 
 ```bash
 mongoimport --host ds247378.mlab.com:47307 --db heroku_57q5z6s --username Boggly --password 6weather6 --jsonArray --collection storeTwo inventoryArray.json
