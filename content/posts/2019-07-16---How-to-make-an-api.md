@@ -163,6 +163,8 @@ console.log(`I'm here, I care, I'm listening on ${port}.`);
 
 *(It's not magic, it's just someone else's code).
 
+#### 🎉 BOOM IT WORKED YOU DID IT YOU MADE A LIVE API🎉
+
 ## Level 3: Creating a database with mLab
 mLab is a [cloud database service that hosts MongoDB databases](https://en.wikipedia.org/wiki/MLab). 
 
@@ -322,6 +324,8 @@ More on optional flags and how to import CSVs or other data files in the [Mongo 
 ### mLab
 You can also create collections and upload documents straight into the mLab GUI. Click the 'Collections' tab and 'Add collection' button on the top right to create a collection. Click into that cell on the table to upload a document.
 
+#### 🎉 BOOM IT WORKED YOU DID IT YOU MADE A DATABASE 🎉
+
 ## Level 4: Making endpoints
 Right now, the URL for our deployed API is giving us a message we wrote in the `server.js` file. How do we make it so we get see our data instead? How do we make multiple endpoints for different sets of data?
 
@@ -424,8 +428,8 @@ Even if our local database and our remote one have the same name, they don't sha
 const dbURL = process.env.MONGODB_URI || 
 ``` -->
 
-### Mongoose
 Mongoose, as mentioned previously, is a way to organize your data. In service of that goal, it offers you something called `Schema`. A `Schema` looks like this:
+### Mongoose
 
 ```js
 const mongoose = require('mongoose');
@@ -658,5 +662,7 @@ router.route('/xl')
 ```
 
 When the object passed to the `.find()` method has a key-value pair, the query is for `Item`s who have a matching pair. More ways to query are in [the Mongoose docs](https://mongoosejs.com/docs/api.html#model_Model.find).
+
+#### 🎉 BOOM IT WORKED YOU DID IT YOU MADE AN API🎉
 
 Hope this helped! If you have any q's, feel free to [ask](https://www.twitter.com/zoecodes). 
