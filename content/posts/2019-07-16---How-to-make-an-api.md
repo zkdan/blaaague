@@ -663,6 +663,35 @@ router.route('/xl')
 
 When the object passed to the `.find()` method has a key-value pair, the query is for `Item`s who have a matching pair. More ways to query are in [the Mongoose docs](https://mongoosejs.com/docs/api.html#model_Model.find).
 
+#### CORS it up, baby
+CORS stands for cross-origin resource sharing and means that the server doesn't think that the client is allowed to access this data its asking for.
+
+The solution? Headers!
+
+Headers are information that clients and servers use to talk about the request you're making. Unsurprisingly, Mongoose has you covered. [Add a header line](https://dzone.com/articles/cors-in-node) inside each of your routes:
+
+```js
+router.route('/xl')
+  .get((req,res) => {
+    // this is the new line!↓↓↓↓↓↓↓↓
+    res.header("Access-Control-Allow-Origin", "*");
+    // riiiight up here ^^^^^^
+    Item.find({"size":"xl"}, (err, items) =>{
+      if(err){
+        res
+          .status(400)
+          .send({
+            error:err
+          });
+        return;
+      }
+      res
+        .status(200)
+        .send(items);
+    });
+  });
+```
+
 #### 🎉 BOOM IT WORKED YOU DID IT YOU MADE AN API🎉
 
 Hope this helped! If you have any q's, feel free to [ask](https://www.twitter.com/zoecodes). 
